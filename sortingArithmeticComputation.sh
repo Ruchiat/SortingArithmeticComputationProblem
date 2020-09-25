@@ -21,3 +21,9 @@ echo "USE CASE 3 OUTPUT : "$computeTwo;
 #compute use-case 4
 computeThree=$(( c + a / b ));
 echo  "USE CASE 4 OUTPUT : "$computeThree;
+
+#compute use-case 5
+computeFour=$(( a % b + c ));
+
+echo "USE CASE 5 OUTPUT : "$computeFour;
+
