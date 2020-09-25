@@ -17,3 +17,7 @@ echo "USE CASE 2 OUTPUT : "$computeOne;
 
 computeTwo=$(( a * b + c ));
 echo "USE CASE 3 OUTPUT : "$computeTwo;
+
+#compute use-case 4
+computeThree=$(( c + a / b ));
+echo  "USE CASE 4 OUTPUT : "$computeThree;
