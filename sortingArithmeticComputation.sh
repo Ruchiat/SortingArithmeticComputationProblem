@@ -8,5 +8,8 @@ echo "Entered value for a :"$a;
 echo "Entered value for b :"$b;
 echo "Entered value for c :"$c;
 
+#compute use-case 2
 
+computeOne=$(( a + b * c ));
+echo "USE CASE 2 OUTPUT : "$computeOne;
 
