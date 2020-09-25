@@ -36,4 +36,6 @@ ucDict[uc2]=$computeTwo;
 ucDict[uc3]=$computeThree;
 ucDict[uc4]=$computeFour;
 
+#show compution
 
+echo "${ucDict[*]}";
