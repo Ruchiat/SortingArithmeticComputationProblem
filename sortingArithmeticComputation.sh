@@ -8,22 +8,32 @@ echo "Entered value for a :"$a;
 echo "Entered value for b :"$b;
 echo "Entered value for c :"$c;
 
-#compute use-case 2
+#1st compution
 
 computeOne=$(( a + b * c ));
 echo "USE CASE 2 OUTPUT : "$computeOne;
 
-#compute use-case 3
+#2nd compution
 
 computeTwo=$(( a * b + c ));
 echo "USE CASE 3 OUTPUT : "$computeTwo;
 
-#compute use-case 4
+#3rd compution
 computeThree=$(( c + a / b ));
 echo  "USE CASE 4 OUTPUT : "$computeThree;
 
-#compute use-case 5
+#4th compution
 computeFour=$(( a % b + c ));
 
 echo "USE CASE 5 OUTPUT : "$computeFour;
+
+#store compution
+
+declare -A ucDict
+
+ucDict[uc1]=$computeOne;
+ucDict[uc2]=$computeTwo;
+ucDict[uc3]=$computeThree;
+ucDict[uc4]=$computeFour;
+
 
