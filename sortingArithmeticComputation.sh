@@ -13,3 +13,7 @@ echo "Entered value for c :"$c;
 computeOne=$(( a + b * c ));
 echo "USE CASE 2 OUTPUT : "$computeOne;
 
+#compute use-case 3
+
+computeTwo=$(( a * b + c ));
+echo "USE CASE 3 OUTPUT : "$computeTwo;
