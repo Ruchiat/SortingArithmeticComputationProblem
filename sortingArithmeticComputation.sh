@@ -1,31 +1,31 @@
 #!/bin/bash
 
-read -p "Enter the value for a :" a
-read -p "Enter the value for b : " b
-read -p "Enter the value for c : " c
+#Arithmetic Computation & Sorting 
+#This problem computes different arithmetic expressions and Sorts the results
 
-echo "Entered value for a :"$a;
-echo "Entered value for b :"$b;
-echo "Entered value for c :"$c;
+read -p "Enter the first value for computaion :" firstValue
+read -p "Enter the second value for computaion : " secondValue
+read -p "Enter the third value for compution : " thirdValue
 
-#1st compution
 
-computeOne=$(( a + b * c ));
-echo "USE CASE 2 OUTPUT : "$computeOne;
+#Compution a + b * c
 
-#2nd compution
+computeOne=$(( firstValue + secondValue * thirdValue ));
+echo "First compution output : "$computeOne;
 
-computeTwo=$(( a * b + c ));
-echo "USE CASE 3 OUTPUT : "$computeTwo;
+#Compution of a * b +c
 
-#3rd compution
-computeThree=$(( c + a / b ));
-echo  "USE CASE 4 OUTPUT : "$computeThree;
+computeTwo=$(( firstValue * secondValue + thirdValue ));
+echo "second compution output : "$computeTwo;
 
-#4th compution
-computeFour=$(( a % b + c ));
+#Compution of c + a / b
+computeThree=$(( thirdValue + firstValue / secondValue ));
+echo  "third compution output: "$computeThree;
 
-echo "USE CASE 5 OUTPUT : "$computeFour;
+#Compution of a % b + c
+computeFour=$(( firstValue % secondValue + thirdValue ));
+
+echo "fourth compution output : "$computeFour;
 
 #store compution
 
@@ -36,6 +36,8 @@ ucDict[uc2]=$computeTwo;
 ucDict[uc3]=$computeThree;
 ucDict[uc4]=$computeFour;
 
-#show compution
+#Read the values from the Dictionary into the array
 
-echo "${ucDict[*]}";
+echo "array is :"
+echo "${ucArray[*]}";
+
