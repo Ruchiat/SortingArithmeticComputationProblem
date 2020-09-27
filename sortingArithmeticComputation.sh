@@ -41,3 +41,9 @@ ucDict[uc4]=$computeFour;
 echo "array is :"
 echo "${ucArray[*]}";
 
+#show the Computation Result in the Descending Order
+
+echo "desc order:"
+        IFS=$'\n';
+        secondHighest=`echo "${ucArray[*]}" | sort -n -r `;
+        echo $secondHighest;
