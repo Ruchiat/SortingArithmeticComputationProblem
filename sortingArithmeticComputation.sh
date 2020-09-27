@@ -47,3 +47,11 @@ echo "desc order:"
         IFS=$'\n';
         secondHighest=`echo "${ucArray[*]}" | sort -n -r `;
         echo $secondHighest;
+
+#Sort the results to show the Computation Value in Ascending Order
+
+echo "asc order : "
+        IFS=$'\n';
+        secondLowest=`echo "${ucArray[*]}" | sort -n `;
+        echo $secondLowest;
+
